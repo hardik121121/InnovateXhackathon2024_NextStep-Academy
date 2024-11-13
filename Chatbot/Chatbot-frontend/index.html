@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive EdTech Chatbot</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <div class="chat-container">
+    <header class="chat-header">
+      <h2>EdTech Chatbot</h2>
+      <p>Your Educational Assistant</p>
+    </header>
+    
+    <!-- FAQ Section -->
+    <div id="faq-section">
+        <h3>Frequently Asked Questions</h3>
+        <ul>
+            <li onclick="sendFAQ('What is your return policy?')">What is your return policy?</li>
+            <li onclick="sendFAQ('How do I track my order?')">How do I track my order?</li>
+            <li onclick="sendFAQ('What payment methods do you accept?')">What payment methods do you accept?</li>
+            <li onclick="sendFAQ('Can I cancel my order?')">Can I cancel my order?</li>
+        </ul>
+    </div>
+    
+    <!-- Chat Box Section -->
+    <div class="chat-box" id="chat-box">
+      <!-- Chat messages will be dynamically inserted here -->
+    </div>
+    
+    <!-- Input Section -->
+    <div class="chat-input">
+      <input type="text" id="user-input" placeholder="Ask a question..." autocomplete="off">
+      <button id="send-button">Send</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
