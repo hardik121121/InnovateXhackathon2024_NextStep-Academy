@@ -1,0 +1,42 @@
+ .App{
+  background-color:linear-gradient(rgb(186, 54, 54), rgb(206, 21, 21), rgb(171, 129, 129))
+} 
+/* -----------------topicquize page------------- */
+.topicdiv{
+  background-color:rgb(27,169,76)
+}
+.topicdivh1:hover{
+  font: weight 600px;;
+  font-size:larger;
+  /* font-style:italic; */
+  color:rgb(154, 87, 87)
+}
+
+
+/* ----------   anwer tag     ------------- */
+.hoverOption:hover{
+ font-weight: bold
+}
+
+/*  */
+.li-option-tag{
+  list-style-type: none;
+}
+
+table, th, td {
+  border:1px solid black;
+}
+
+.finalresult{
+  /* position:absolute;
+   right:100px; 
+   bottom:10px */
+  margin-bottom: 50px;
+  float: right;
+  margin-right: 100px;
+  border-radius: 20px;
+
+}
+.finalresult:hover{
+  background-color:rgb(35, 135, 92)
+}

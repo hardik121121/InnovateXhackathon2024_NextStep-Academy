@@ -1,0 +1,157 @@
+Reset default styling
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Chat container styling */
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #4a90e2, #9013fe);
+  }
+  
+  .chat-container {
+    width: 100%;
+    max-width: 400px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+  }
+  
+  .chat-header {
+    background-color: #4a90e2;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #e0e0e0;
+  }
+  
+  .chat-box {
+    max-height: 400px;
+    padding: 15px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .chat-message {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    max-width: 75%;
+    word-wrap: break-word;
+  }
+  
+  .user-message {
+    background-color: #4a90e2;
+    color: white;
+    align-self: flex-end;
+  }
+  
+  .bot-message {
+    background-color: #f1f0f0;
+    color: black;
+    align-self: flex-start;
+  }
+  
+  .chat-input {
+    display: flex;
+    padding: 10px;
+    border-top: 2px solid #e0e0e0;
+  }
+  
+  .chat-input input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
+  
+  .chat-input button {
+    margin-left: 10px;
+    padding: 10px 15px;
+    font-size: 16px;
+    color: white;
+    background-color: #4a90e2;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  .chat-input button:hover {
+    background-color: #3a78d2;
+  }
+  
+  .user-message::before {
+    content: "👤";
+    margin-right: 5px;
+}
+.bot-message::before {
+    content: "🤖";
+    margin-right: 5px;
+}
+
+#faq-section {
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+#faq-section:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+#faq-section h3 {
+    font-size: 1.4em;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+    font-weight: 600;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+}
+
+#faq-section ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#faq-section li {
+    cursor: pointer;
+    color: #007bff;
+    margin: 10px 0;
+    font-size: 1.1em;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#faq-section li:hover {
+    color: #0056b3;
+    background-color: #e9f2ff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transform: scale(1.02);
+}
+
+
+.bot-message {
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
